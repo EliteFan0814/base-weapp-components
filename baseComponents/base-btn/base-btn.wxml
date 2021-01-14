@@ -1,0 +1,15 @@
+<view class="base-btn-wrap">
+  <view wx:if="{{!disabled}}" class="base-btn btn-style {{isPushing?'is-pushing':''}}" bind:tap="handleTap">
+    <block wx:if="{{!isPushing}}">
+      <text class="text-wrap">{{btnName}}</text>
+    </block>
+    <block wx:else>
+      <view style="width:{{isPushing?btnWidth:''}}px">
+        <image src="./loading.svg" class="loading"></image>
+      </view>
+    </block>
+  </view>
+  <view wx:else class="base-btn btn-style is-pushing">
+    <text>{{btnName}}</text>
+  </view>
+</view>

@@ -1,0 +1,51 @@
+{
+  "pages": ["pages/index/index", "pages/merchant/merchant", "pages/cart/cart", "pages/personal/personal"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#BBBBBB",
+    "selectedColor": "#07c160",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/img/index.png",
+        "selectedIconPath": "static/img/indexActive.png"
+      },
+      {
+        "pagePath": "pages/merchant/merchant",
+        "text": "商家",
+        "iconPath": "static/img/class.png",
+        "selectedIconPath": "static/img/classActive.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "static/img/cart.png",
+        "selectedIconPath": "static/img/cartActive.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "static/img/personal.png",
+        "selectedIconPath": "static/img/personalActive.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "base-header": "baseComponents/base-header/base-header",
+    "base-btn": "baseComponents/base-btn/base-btn",
+    "base-no-list": "baseComponents/base-no-list/base-no-list",
+    "base-search": "baseComponents/base-search/base-search",
+    "base-pre-img": "baseComponents/base-pre-img/base-pre-img",
+    "base-swiper": "baseComponents/base-swiper/base-swiper",
+    "base-class-swiper": "baseComponents/base-class-swiper/base-class-swiper",
+    "base-notice-list": "baseComponents/base-notice-list/base-notice-list",
+    "van-icon": "@vant/weapp/icon/index"
+  }
+}

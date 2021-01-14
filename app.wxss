@@ -1,0 +1,8 @@
+/**app.wxss**/
+.container {
+  font-family: PingFang-SC-Bold;
+  box-sizing: border-box;
+  font-size: 24.15rpx;
+  color: #333333;
+  min-height: 100vh;
+}

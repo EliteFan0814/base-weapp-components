@@ -1,0 +1,4 @@
+<!-- pages/merchant/merchant.wxml -->
+<view class="container">
+  <base-header title="商家" showLeft="{{false}}"></base-header>
+</view>

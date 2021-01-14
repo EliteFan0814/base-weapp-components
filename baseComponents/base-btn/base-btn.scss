@@ -1,0 +1,33 @@
+.base-btn-wrap {
+  .base-btn {
+    transition: all 0.3s;
+    display: inline-block;
+    padding: 15rpx 30rpx;
+    background-color: #07c160;
+    box-shadow: 0rpx 5rpx 15rpx 0rpx rgba(89, 117, 240, 0.3);
+    border-radius: 39rpx;
+    font-size: 28rpx;
+    line-height: 29rpx;
+    letter-spacing: 2rpx;
+    color: #ffffff;
+    text-align: center;
+  }
+  .is-pushing {
+    background-color: #bbbbbb;
+  }
+  @keyframes round {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .loading {
+    animation: round 2.7s linear infinite;
+    width: 28rpx;
+    height: 28rpx;
+    display: block;
+    margin: 0 auto;
+  }
+}

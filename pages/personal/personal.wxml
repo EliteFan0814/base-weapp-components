@@ -1,0 +1,4 @@
+<!-- pages/personal/personal.wxml -->
+<view class="container">
+  <base-header title="个人中心" showLeft="{{false}}"></base-header>
+</view>

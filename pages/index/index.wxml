@@ -1,0 +1,18 @@
+<!-- index.wxml -->
+<view class="container">
+  <base-header title="首页" showLeft="{{false}}"></base-header>
+  <base-swiper bind:tapItem="openGood"></base-swiper>
+  <base-class-swiper classArr="{{classArr}}"></base-class-swiper>
+  <base-notice-list noticeList="{{noticeList}}"></base-notice-list>
+  <base-btn btnName="确认" isPushing="{{isPushing}}" bind:btnTap="handleTap"></base-btn>
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

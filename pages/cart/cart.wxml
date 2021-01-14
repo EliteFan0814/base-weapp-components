@@ -1,0 +1,4 @@
+<!--pages/cart/cart.wxml-->
+<view class="container">
+<base-header title="购物车" showLeft="{{false}}"></base-header>
+</view>
