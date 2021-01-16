@@ -46,7 +46,7 @@ Component({
    */
   methods: {
     handleTap(e) {
-      this.triggerEvent('tapItem')
+      this.triggerEvent('tapItem', e.currentTarget.dataset.id)
     }
   }
 })

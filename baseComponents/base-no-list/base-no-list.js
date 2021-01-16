@@ -4,26 +4,35 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    fontSize: {
+      type: Number,
+      value: 26
+    },
     topDistance: {
       type: Number,
-      value: 200
+      value: 20
     },
     title: {
       type: String,
-      value: '暂无任何订单'
-    }, 
-    widthSize: {
-      type: Number,
-      value: 278
+      value: '暂无订单,快去逛逛吧~'
     },
-    heightSize: {
-      type: Number,
-      value: 255
+    redirect: {
+      type: Boolean,
+      value: true
     },
-    widthWrap: {
+    btnName: {
       type: String,
-      value: '100%'
+      value: '去逛逛'
     },
+    // 图片宽
+    imgW: {
+      type: Number,
+      value: 300
+    },
+    otherInfo: {
+      type: String,
+      value: '去首页看看吧'
+    }
   },
 
   /**
@@ -34,5 +43,9 @@ Component({
   /**
    * 组件的方法列表
    */
-  methods: {}
+  methods: {
+    handleClick() {
+      this.triggerEvent('btnTap')
+    }
+  }
 })

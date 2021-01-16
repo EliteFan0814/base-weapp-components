@@ -9,7 +9,24 @@ Page({
     isPushing: false,
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    swiperList: [
+      { hostPic: 'https://dummyimage.com/750x240/000/fff', id: 4 },
+      { hostPic: 'https://dummyimage.com/750x240/000/fff', id: 15 },
+      { hostPic: 'https://dummyimage.com/750x80/000/fff', id: 28 },
+      { hostPic: 'https://dummyimage.com/750x80/000/fff', id: 3 }
+    ],
     classArr: [
+      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
+      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
+      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
+      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
+      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
+      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
+      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
+      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
+      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
+      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
+      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
       { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
       { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
       { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
@@ -23,8 +40,8 @@ Page({
       { title: '放放假啦，赶紧回家假啦放假啦，赶紧回家，赶紧回家啦放假啦，赶紧回家！！！', id: 3 }
     ]
   },
-  openGood() {
-    console.log(123)
+  openGood(e) {
+    console.log('id', e.detail)
   },
   handleTap() {
     this.setData({

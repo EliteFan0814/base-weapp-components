@@ -1,9 +1,11 @@
 <!-- index.wxml -->
 <view class="container">
   <base-header title="首页" showLeft="{{false}}"></base-header>
-  <base-swiper bind:tapItem="openGood"></base-swiper>
-  <base-class-swiper classArr="{{classArr}}"></base-class-swiper>
+  <base-search></base-search>
+  <base-swiper swiperList="{{swiperList}}" bind:tapItem="openGood"></base-swiper>
   <base-notice-list noticeList="{{noticeList}}"></base-notice-list>
+  <base-class-swiper classArr="{{classArr}}"></base-class-swiper>
+  <base-no-list></base-no-list>
   <base-btn btnName="确认" isPushing="{{isPushing}}" bind:btnTap="handleTap"></base-btn>
   <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>

@@ -61,7 +61,6 @@ Component({
     },
     getPages() {
       const pages = getCurrentPages()
-      console.log('pages.length', pages.length)
       if (pages.length <= 1) {
         this.setData({
           canBack: false
