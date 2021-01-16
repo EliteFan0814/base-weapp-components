@@ -1,0 +1,39 @@
+.container .omit-1 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.container .hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.container .class-page-wrap {
+  display: flex;
+}
+
+.container .class-page-wrap .aside-wrap {
+  background-color: #f7f8fa;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  font-size: 26rpx;
+}
+
+.container .class-page-wrap .aside-wrap .class-item {
+  border-left: 3px solid transparent;
+  padding: 18rpx 0 18rpx 10rpx;
+}
+
+.container .class-page-wrap .aside-wrap .active-item {
+  font-weight: bold;
+  background-color: #fff;
+  border-left: 3px solid red;
+}
+
+.container .class-page-wrap .content-wrap {
+  flex-grow: 1;
+  border: 1px solid green;
+}

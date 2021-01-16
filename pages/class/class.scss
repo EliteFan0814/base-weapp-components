@@ -1,0 +1,44 @@
+.container {
+  // 单行显示
+  .omit-1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  // 是否隐藏滚动条
+  .hide-scroll-bar {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .class-page-wrap {
+    display: flex;
+    // 左侧 aside 栏
+    .aside-wrap {
+      // border: 1px solid red;
+      background-color: #f7f8fa;
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      font-size: 26rpx;
+      .class-item {
+        // border: 1px solid green;
+        border-left: 3px solid transparent;
+        padding: 18rpx 0 18rpx 10rpx;
+      }
+      .active-item {
+        font-weight: bold;
+        background-color: #fff;
+        border-left: 3px solid red;
+      }
+    }
+
+    // 右侧内容区
+    .content-wrap {
+      flex-grow: 1;
+      border: 1px solid green;
+    }
+  }
+}

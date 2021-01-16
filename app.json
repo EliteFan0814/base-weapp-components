@@ -1,5 +1,11 @@
 {
-  "pages": ["pages/index/index", "pages/merchant/merchant", "pages/cart/cart", "pages/personal/personal"],
+  "pages": [
+    "pages/index/index",
+    "pages/class/class",
+    "pages/merchant/merchant",
+    "pages/cart/cart",
+    "pages/personal/personal"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -16,6 +22,12 @@
         "text": "首页",
         "iconPath": "static/img/index.png",
         "selectedIconPath": "static/img/indexActive.png"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "text": "分类",
+        "iconPath": "static/img/class.png",
+        "selectedIconPath": "static/img/classActive.png"
       },
       {
         "pagePath": "pages/merchant/merchant",

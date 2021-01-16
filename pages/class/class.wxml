@@ -1,0 +1,12 @@
+<!-- pages/merchant/merchant.wxml -->
+<view class="container">
+  <base-header title="分类" showLeft="{{false}}"></base-header>
+  <view class="class-page-wrap" style="height:calc(100vh - {{headerHeight}}px)">
+    <view class="aside-wrap {{hideScrollBar?'hide-scroll-bar':''}}">
+      <view bind:tap="handleClick" data-index="{{index}}" data-id="{{item.value}}" wx:for="{{classList}}" wx:key="id" class="class-item {{index === activeItemIndex?'active-item':''}}">
+        <view class="item omit-1 ">{{item.text}}</view>
+      </view>
+    </view>
+    <view class="content-wrap"></view>
+  </view>
+</view>

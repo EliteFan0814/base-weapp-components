@@ -1,1 +1,14 @@
-/* pages/merchant/merchant.wxss */
+.container .class-page-wrap {
+  display: flex;
+}
+
+.container .class-page-wrap .side-wrap {
+  border: 1px solid red;
+  width: 25%;
+  border: 1px solid red;
+}
+
+.container .class-page-wrap .content-wrap {
+  flex-grow: 1;
+  border: 1px solid green;
+}
