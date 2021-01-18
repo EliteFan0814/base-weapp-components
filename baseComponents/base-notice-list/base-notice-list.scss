@@ -10,7 +10,6 @@
   .swiper-wrap {
     padding: 0 10rpx;
     flex-grow: 1;
-    // border: 1px solid red;
     .swiper {
       height: 36rpx;
       .notice-item {
@@ -30,8 +29,9 @@
     display: flex;
     align-items: center;
     .more-img {
-      width: 24rpx;
-      height: 24rpx;
+      margin-left: 5rpx;
+      width: 18rpx;
+      height: 18rpx;
     }
   }
 }

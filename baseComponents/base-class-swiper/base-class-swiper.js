@@ -10,6 +10,16 @@ Component({
       type: Array,
       value: [] //[{ className: '示例', classImg: 'https://dummyimage.com/80x80/000/fff' }]
     },
+    // 每页分类个数
+    pageNum: {
+      type: Number,
+      value: 10
+    },
+    //每页行数
+    pageRows: {
+      type: Number,
+      value: 2
+    },
     // 自动切换时间间隔
     interval: {
       type: Number,
@@ -23,7 +33,6 @@ Component({
   },
   data: {
     classList: [], // 分页好的类名列表
-    singleNum: 10, // 每页分类个数
     showDots: true, //是否显示自定义 dots
     swiperHeight: 0, // 分页高度
     currentPage: 0 // 当前页
@@ -33,7 +42,7 @@ Component({
     // 监听传入的classArr，并将其分页
     classArr(classArr) {
       this.setData({
-        classList: this.sliceArray(classArr, this.data.singleNum)
+        classList: this.sliceArray(classArr, this.data.pageNum)
       })
       if (classArr.length) {
         // 创建 wxml 查询对象 获取高度
@@ -47,6 +56,13 @@ Component({
           })
           .exec()
       }
+    },
+    // 监听传入的个数和行数计算出单个 item 占据宽度
+    'pageNum,pageRows'(pageNum, pageRows) {
+      const itemWidth = (100 / (pageNum / pageRows)).toFixed(2)
+      this.setData({
+        itemWidth: itemWidth
+      })
     }
   },
   // 组件生命周期

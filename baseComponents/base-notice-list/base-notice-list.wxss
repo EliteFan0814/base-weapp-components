@@ -38,6 +38,7 @@
 }
 
 .base-notice-list-wrap .right .more-img {
-  width: 24rpx;
-  height: 24rpx;
+  margin-left: 5rpx;
+  width: 18rpx;
+  height: 18rpx;
 }

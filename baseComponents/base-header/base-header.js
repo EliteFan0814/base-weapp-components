@@ -7,9 +7,9 @@ Component({
    */
   properties: {
     // 导航头高度
-    headerHeight:{
-      type:Number,
-      value:38+app.globalData.capsuleToTop
+    useHeight: {
+      type: Boolean,
+      value: true
     },
     title: {
       type: String,
@@ -39,10 +39,19 @@ Component({
   data: {
     capsuleToTop: app.globalData.capsuleToTop,
     navOpacity: 0,
-    canBack: true
+    canBack: true,
+    headerHeight: 38 + app.globalData.capsuleToTop
   },
-  ready: function () {
-    this.getPages()
+  // 组件生命周期
+  lifetimes: {
+    attached: function () {
+      // 在组件实例进入页面节点树时执行
+      this.getPages()
+      this.setHeaderHeight()
+    },
+    detached: function () {
+      // 在组件实例被从页面节点树移除时执行
+    }
   },
   /**
    * 组件的方法列表
@@ -68,6 +77,25 @@ Component({
       } else {
         this.setData({
           canBack: true
+        })
+      }
+    },
+    // 设置导航头的占位高度
+    setHeaderHeight() {
+      if (this.data.useHeight) {
+        // 创建 wxml 查询对象 获取高度
+        let query = this.createSelectorQuery()
+        query
+          .select('.header')
+          .boundingClientRect((res) => {
+            this.setData({
+              headerHeight: res.height
+            })
+          })
+          .exec()
+      } else {
+        this.setData({
+          headerHeight: 0
         })
       }
     }

@@ -1,8 +1,6 @@
-  <view bind:tap="handleTap" class="base-search-wrap search-style">
-    <view class="top-search">
-      <view class="search flex-cc">
-        <image src="./search.png" class="search-img"></image>
-        <text>请输入关键字</text>
-      </view>
+  <view bind:tap="handleTap" class="base-search-wrap">
+    <view class="search flex-cc search-style">
+      <image wx:if="{{showImg}}" src="./search.png" class="search-img"></image>
+      <text>{{title}}</text>
     </view>
   </view>

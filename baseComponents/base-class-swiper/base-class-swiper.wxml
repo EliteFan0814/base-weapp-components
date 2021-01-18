@@ -4,7 +4,7 @@
     <block wx:for="{{classList}}" wx:for-item="pageItem" wx:for-index="pageIndex" wx:key="*this">
       <swiper-item>
         <view class="class-list">
-          <view bind:tap="openClassPage" wx:for="{{pageItem}}" wx:key="id" data-pageIndex="{{pageIndex}}" data-index="{{index}}" class="class-item">
+          <view bind:tap="openClassPage" wx:for="{{pageItem}}" wx:key="id" data-pageIndex="{{pageIndex}}" data-index="{{index}}" class="class-item" style="width:{{itemWidth}}%;">
             <image class="class-img" src="{{item.classImg}}"></image>
             <text class="omit-1">{{item.className}}</text>
           </view>
@@ -15,7 +15,7 @@
   <block wx:else>
     <block wx:for="{{classList}}" wx:for-item="pageItem" wx:for-index="pageIndex" wx:key="*this">
       <view class="class-list">
-        <view bind:tap="openClassPage" wx:for="{{pageItem}}" wx:key="id" data-pageIndex="{{pageIndex}}" data-index="{{index}}" class="class-item">
+        <view bind:tap="openClassPage" wx:for="{{pageItem}}" wx:key="id" data-pageIndex="{{pageIndex}}" data-index="{{index}}" class="class-item" style="width:{{itemWidth}}%;">
           <image class="class-img" src="{{item.classImg}}"></image>
           <text class="omit-1">{{item.className}}</text>
         </view>
