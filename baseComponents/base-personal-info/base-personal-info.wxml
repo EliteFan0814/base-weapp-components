@@ -1,0 +1,14 @@
+<view class="base-personal-info">
+  <view class="left-wrap">
+    <image src="https://dummyimage.com/107x107/000/fff" class="avatar"></image>
+    <view class="content-wrap">
+      <view class="name">周星驰先生</view>
+      <view>
+        <text class="integral">积分：132</text>
+      </view>
+    </view>
+  </view>
+  <view bind:tap="handleSetting" class="right-wrap">
+    <image src="./setting.svg" class="setting"></image>
+  </view>
+</view>

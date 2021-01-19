@@ -10,6 +10,6 @@
     </block>
   </view>
   <view wx:else class="base-btn btn-style is-pushing">
-    <text>{{btnName}}</text>
+    <text  class="text-wrap">{{btnName}}</text>
   </view>
 </view>

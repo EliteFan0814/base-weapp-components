@@ -1,0 +1,41 @@
+.base-personal-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left-wrap {
+    display: flex;
+    align-items: center;
+    .avatar {
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: block;
+      width: 107rpx;
+      height: 107rpx;
+      margin-right: 20rpx;
+    }
+    .content-wrap {
+      .name {
+        font-size: 32rpx;
+        letter-spacing: 1.4rpx;
+        color: #ffffff;
+        margin-bottom: 15rpx;
+      }
+      .integral {
+        font-size: 20rpx;
+        font-weight: bold;
+        letter-spacing: 0rpx;
+        color: #ffffff;
+        background-color: #268c60;
+        border-radius: 20rpx;
+        padding: 5rpx 15rpx;
+      }
+    }
+  }
+  .right-wrap {
+    .setting {
+      width: 50rpx;
+      height: 50rpx;
+      display: block;
+    }
+  }
+}
