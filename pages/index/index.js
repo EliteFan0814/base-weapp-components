@@ -29,8 +29,6 @@ Page({
       { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
       { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
       { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
-      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
-      { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' },
       { className: '生生鲜大虾鲜', classImg: 'https://dummyimage.com/80x80/000/fff' }
     ],
     noticeList: [

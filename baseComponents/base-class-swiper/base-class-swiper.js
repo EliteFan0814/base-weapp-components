@@ -35,7 +35,8 @@ Component({
     classList: [], // 分页好的类名列表
     showDots: true, //是否显示自定义 dots
     swiperHeight: 0, // 分页高度
-    currentPage: 0 // 当前页
+    currentPage: 0, // 当前页
+    itemWidth:20 // 默认每项宽度
   },
   // 数据监听器
   observers: {
