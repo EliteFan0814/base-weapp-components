@@ -23,7 +23,8 @@ Component({
   // 向外暴露css class 类，方便父组件接管自定义组件样式
   externalClasses: ['btn-style'],
   data: {
-    btnWidth: 0
+    btnWidth: 0,
+    btnHeight: 0
   },
   methods: {
     handleTap() {
@@ -37,13 +38,15 @@ Component({
   lifetimes: {
     attached: function () {
       // 在组件实例进入页面节点树时执行
-      // 
+      //
       let query = this.createSelectorQuery()
       query
         .select('.text-wrap')
         .boundingClientRect((res) => {
+          console.log(res)
           this.setData({
-            btnWidth: res.width
+            btnWidth: res.width,
+            btnHeight: res.height
           })
         })
         .exec()

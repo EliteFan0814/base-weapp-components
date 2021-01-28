@@ -1,22 +1,16 @@
 .base-btn-wrap {
-  .base-btn {
-    box-sizing: border-box;
-    transition: all 0.3s;
-    display: inline-block;
-    padding: 10rpx 30rpx;
-    background-color: #0ccd79;
-    box-shadow: 0rpx 5rpx 15rpx 0rpx rgba(89, 117, 240, 0.3);
-    border-radius: 39rpx;
-    font-size: 28rpx;
-    line-height: 28rpx;
-    letter-spacing: 2rpx;
-    color: #ffffff;
-    text-align: center;
-  }
-
-  .is-pushing {
-    background-color: #bbbbbb;
-  }
+  display: inline-block;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  padding: 10rpx 30rpx;
+  background-color: #0ccd79;
+  box-shadow: 0rpx 5rpx 15rpx 0rpx rgba(89, 117, 240, 0.3);
+  border-radius: 39rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  letter-spacing: 2rpx;
+  color: #ffffff;
+  text-align: center;
 
   @keyframes round {
     from {
@@ -27,12 +21,20 @@
       transform: rotate(360deg);
     }
   }
-
-  .loading {
-    animation: round 2.7s linear infinite;
-    width: 28rpx;
-    height: 28rpx;
-    display: block;
-    margin: 0 auto;
+  .img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .loading {
+      animation: round 2.7s linear infinite;
+      width: 28rpx;
+      height: 28rpx;
+      display: inline-block;
+      margin: 0 auto;
+    }
   }
+}
+.is-pushing {
+  background-color: #bbbbbb;
 }

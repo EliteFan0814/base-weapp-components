@@ -49,7 +49,7 @@ Page({
       this.setData({
         isPushing: false
       })
-    }, 4000)
+    }, 2000)
   },
   // 事件处理函数
   bindViewTap() {

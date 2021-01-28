@@ -1,8 +1,8 @@
 /**index.wxss**/
-.container .wrap {
-  border: 1px solid red;
+.container .btn-wrap {
+  padding: 30rpx;
 }
 
-.container .wrap .btn-style {
+.container .btn-wrap .btn-style {
   width: 100%;
 }

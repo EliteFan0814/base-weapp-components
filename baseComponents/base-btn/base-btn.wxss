@@ -1,7 +1,7 @@
-.base-btn-wrap .base-btn {
+.base-btn-wrap {
+  display: inline-block;
   box-sizing: border-box;
   transition: all 0.3s;
-  display: inline-block;
   padding: 10rpx 30rpx;
   background-color: #0ccd79;
   box-shadow: 0rpx 5rpx 15rpx 0rpx rgba(89, 117, 240, 0.3);
@@ -13,10 +13,6 @@
   text-align: center;
 }
 
-.base-btn-wrap .is-pushing {
-  background-color: #bbbbbb;
-}
-
 @keyframes round {
   from {
     transform: rotate(0deg);
@@ -26,10 +22,21 @@
   }
 }
 
-.base-btn-wrap .loading {
+.base-btn-wrap .img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.base-btn-wrap .img-wrap .loading {
   animation: round 2.7s linear infinite;
   width: 28rpx;
   height: 28rpx;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
+}
+
+.is-pushing {
+  background-color: #bbbbbb;
 }
