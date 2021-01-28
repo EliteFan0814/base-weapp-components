@@ -12,6 +12,7 @@
   align-items: center;
   font-size: 17px;
   line-height: 32px;
+  height: 32px;
   font-weight: bold;
   text-align: center;
   color: #000;

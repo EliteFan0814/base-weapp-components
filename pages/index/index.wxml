@@ -7,6 +7,9 @@
   <base-class-swiper classArr="{{classArr}}"></base-class-swiper>
   <base-no-list></base-no-list>
   <base-btn btnName="确认" isPushing="{{isPushing}}" bind:btnTap="handleTap"></base-btn>
+  <view class="wrap">
+    <base-btn btnName="确认收货" isPushing="{{isPushing}}" bind:btnTap="handleTap" btn-style="btn-style"></base-btn>
+  </view>
   <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>

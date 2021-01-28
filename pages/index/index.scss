@@ -1,4 +1,9 @@
 /**index.wxss**/
-.container{
-  
+.container {
+  .wrap {
+    border: 1px solid red;
+    .btn-style {
+      width: 100%;
+    }
+  }
 }

@@ -37,6 +37,7 @@ Component({
   lifetimes: {
     attached: function () {
       // 在组件实例进入页面节点树时执行
+      // 
       let query = this.createSelectorQuery()
       query
         .select('.text-wrap')

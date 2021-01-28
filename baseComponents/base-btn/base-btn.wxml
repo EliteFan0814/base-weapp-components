@@ -1,7 +1,8 @@
 <view class="base-btn-wrap">
+  <!-- 非禁用状态 -->
   <view wx:if="{{!disabled}}" class="base-btn btn-style {{isPushing?'is-pushing':''}}" bind:tap="handleTap">
     <block wx:if="{{!isPushing}}">
-      <text class="text-wrap">{{btnName}}</text>
+      <view class="text-wrap">{{btnName}}</view>
     </block>
     <block wx:else>
       <view style="width:{{isPushing?btnWidth:''}}px">
@@ -9,7 +10,8 @@
       </view>
     </block>
   </view>
+  <!-- 禁用状态 -->
   <view wx:else class="base-btn btn-style is-pushing">
-    <text  class="text-wrap">{{btnName}}</text>
+    <text class="text-wrap">{{btnName}}</text>
   </view>
 </view>

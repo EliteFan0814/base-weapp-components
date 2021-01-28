@@ -1,4 +1,5 @@
 .base-btn-wrap .base-btn {
+  box-sizing: border-box;
   transition: all 0.3s;
   display: inline-block;
   padding: 10rpx 30rpx;
