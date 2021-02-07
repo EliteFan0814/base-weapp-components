@@ -1,6 +1,9 @@
 /**index.wxss**/
 .container .btn-wrap {
   padding: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container .btn-wrap .btn-style {
