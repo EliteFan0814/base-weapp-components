@@ -36,7 +36,7 @@ Component({
     showDots: true, //是否显示自定义 dots
     swiperHeight: 0, // 分页高度
     currentPage: 0, // 当前页
-    itemWidth:20 // 默认每项宽度
+    itemWidth: 20 // 默认每项宽度
   },
   // 数据监听器
   observers: {
@@ -96,7 +96,6 @@ Component({
       this.setData({
         currentPage: e.detail.current
       })
-      console.log(this.data.currentPage)
     },
     //分类表分页处理 targetArray：目标数组 number：每页个数
     sliceArray(targetArray, number) {

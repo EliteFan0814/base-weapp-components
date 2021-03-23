@@ -3,13 +3,13 @@ Component({
   /**
    * 组件的属性列表
    */
-  // 是否显示面板指示点
   properties: {
     //
     swiperHeight: {
       type: Number,
-      value: 240
+      value: 270
     },
+    // 是否显示面板默认指示点
     indicatorDots: {
       type: Boolean,
       value: true
@@ -35,11 +35,14 @@ Component({
       value: []
     }
   },
-
+  externalClasses: ['dots-style'],// 向外暴露css class 类，方便父组件接管自定义组件样式
   /**
    * 组件的初始数据
    */
-  data: {},
+  data: {
+    showDots: true,
+    currentPage: 0 // 当前页
+  },
 
   /**
    * 组件的方法列表
@@ -47,6 +50,11 @@ Component({
   methods: {
     handleTap(e) {
       this.triggerEvent('tapItem', e.currentTarget.dataset.id)
+    },
+    changeSwiper(e) {
+      this.setData({
+        currentPage: e.detail.current
+      })
     }
   }
 })

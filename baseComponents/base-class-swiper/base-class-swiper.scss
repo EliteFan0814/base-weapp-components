@@ -10,8 +10,8 @@
       font-size: 24rpx;
       margin-bottom: 10rpx;
       .class-img {
-        width: 80rpx;
-        height: 80rpx;
+        width: 108rpx;
+        height: 108rpx;
         margin-bottom: 10rpx;
         border-radius: 18.12rpx;
       }
@@ -29,12 +29,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .dot-item {
-      width: 17rpx;
-      height: 17rpx;
-      background-color: #cccccc;
+      width: 14rpx;
+      height: 14rpx;
+      background-color: #dddddd;
       border-radius: 50%;
       margin: 0 8rpx;
+      transition: all 0.3s;
       &:first-child {
         margin-left: 0;
       }
@@ -43,7 +45,7 @@
       }
     }
     .active-item {
-      background-color: #333;
+      background-color: #ff6f36;
     }
   }
 }
