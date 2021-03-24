@@ -107,5 +107,18 @@ App({
         }
       })
     })
+  },
+  //封装 wx.navigateTo 打开页面
+  navigateTo(url, queryStringObj) {
+    let queryStr = ''
+    Object.keys(queryStringObj).map((item, index, arr) => {
+      queryStr = queryStr + item + '=' + queryStringObj[item]
+      if (index < arr.length - 1) {
+        queryStr = queryStr + '&'
+      }
+    })
+    wx.navigateTo({
+      url: `${url}?${queryStr}`
+    })
   }
 })
