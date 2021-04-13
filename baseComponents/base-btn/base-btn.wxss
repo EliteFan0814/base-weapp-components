@@ -13,6 +13,10 @@
   text-align: center;
 }
 
+.base-btn-wrap:active {
+  background-color: #bbbbbb;
+}
+
 @keyframes round {
   from {
     transform: rotate(0deg);

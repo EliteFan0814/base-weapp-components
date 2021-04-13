@@ -18,7 +18,7 @@ export default {
         this.inviteCode = info.query[this.inviteCodeName]
       } else if (scene) {
         // 如果是通过扫码
-        // todo
+        this.inviteCode = info.query.scene
       }
     }
   },

@@ -11,7 +11,9 @@
   letter-spacing: 2rpx;
   color: #ffffff;
   text-align: center;
-
+  &:active {
+    background-color: #bbbbbb;
+  }
   @keyframes round {
     from {
       transform: rotate(0deg);

@@ -44,6 +44,7 @@ async function code2Token() {
 // 换取token和个人信息并存入本地localStorage
 async function setTokenSync() {
   try {
+    token = wx.getStorageSync('token')
     if (!token) {
       const res = await code2Token()
       token = res.token
