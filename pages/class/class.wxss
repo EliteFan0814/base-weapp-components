@@ -35,5 +35,4 @@
 
 .container .class-page-wrap .content-wrap {
   flex-grow: 1;
-  border: 1px solid green;
 }
