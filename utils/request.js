@@ -18,7 +18,7 @@ fly.config = {
 fly.interceptors.request.use(async (request) => {
   fly.lock()
   try {
-    const token = await userAuth.setTokenSync() // 方式1 执行wx.login登录并获取token
+    const token = await userAuth.setTokenAsync() // 方式1 执行wx.login登录并获取token
     // const token = wx.getStorageSync('token') //  方式2 直接获取token
     if (token) {
       request.headers['Authorization'] = 'Bearer ' + token

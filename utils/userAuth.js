@@ -42,7 +42,7 @@ async function code2Token() {
   }
 }
 // 换取token和个人信息并存入本地localStorage
-async function setTokenSync() {
+async function setTokenAsync() {
   try {
     token = wx.getStorageSync('token')
     if (!token) {
@@ -64,6 +64,6 @@ function clearHaveToken() {
 }
 
 export default {
-  setTokenSync,
+  setTokenAsync,
   clearHaveToken
 }

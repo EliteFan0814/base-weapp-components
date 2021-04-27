@@ -1,42 +1,23 @@
-.base-btn-wrap {
+.base-btn {
   display: inline-block;
-  box-sizing: border-box;
-  transition: all 0.3s;
-  padding: 10rpx 30rpx;
-  background-color: #0ccd79;
-  box-shadow: 0rpx 5rpx 15rpx 0rpx rgba(89, 117, 240, 0.3);
+  padding: 15rpx 30rpx;
   border-radius: 39rpx;
   font-size: 28rpx;
-  line-height: 28rpx;
+  line-height: 30rpx;
   letter-spacing: 2rpx;
   color: #ffffff;
   text-align: center;
+  transition: all 0.05s;
+  background-color: #45332a;
+  box-shadow: 0rpx 10rpx 43rpx 0rpx rgba(69, 51, 42, 0.54);
   &:active {
     background-color: #bbbbbb;
   }
-  @keyframes round {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  .img-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    .loading {
-      animation: round 2.7s linear infinite;
-      width: 28rpx;
-      height: 28rpx;
-      display: inline-block;
-      margin: 0 auto;
-    }
-  }
 }
 .is-pushing {
+  box-shadow: none;
   background-color: #bbbbbb;
+  &:active {
+    background-color: #bbbbbb;
+  }
 }

@@ -1,9 +1,11 @@
 /**index.wxss**/
 .container {
-  .btn-wrap {
-    padding: 30rpx;
+  .exp-wrap {
+    padding: 15rpx;
     .btn-style {
-      width: 100%;
+      font-size: 24rpx;
+      padding: 10rpx 70rpx;
+      border-radius: 10rpx;
     }
   }
 }

@@ -5,21 +5,17 @@
   <base-swiper swiperList="{{swiperList}}" bind:tapItem="openGood"></base-swiper>
   <base-notice-list noticeList="{{noticeList}}"></base-notice-list>
   <base-class-swiper classArr="{{classArr}}"></base-class-swiper>
+  <view class="exp-wrap">
+    <base-btn btnName="禁用" disabled isPushing="{{isPushing}}" bind:handleTap="handleTap"></base-btn>
+  </view>
+  <view class="exp-wrap">
+    <base-btn btnName="查看详情"></base-btn>
+  </view>
+  <view class="exp-wrap">
+    <base-btn btnName="提交" isPushing="{{isSending}}" bind:handleTap="handleSend"></base-btn>
+  </view>
+  <view class="exp-wrap">
+    <base-btn btnName="自定义样式" isPushing="{{isPushing}}" bind:handleTap="handleTap" btn-style="btn-style"></base-btn>
+  </view>
   <base-no-list></base-no-list>
-  <base-btn btnName="确认" disabled isPushing="{{isPushing}}" bind:btnTap="handleTap"></base-btn>
-  <base-btn btnName="立即确认"></base-btn>
-  <view class="btn-wrap">
-    <base-btn btnName="确认" isPushing="{{isPushing}}" bind:btnTap="handleTap"></base-btn>
-    <base-btn btnName="确认收货" isPushing="{{isPushing}}" bind:btnTap="handleTap" btn-style="btn-style"></base-btn>
-  </view>
-  <!-- <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view> -->
 </view>

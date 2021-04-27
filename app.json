@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/class/class",
-    "pages/merchant/merchant",
     "pages/cart/cart",
     "pages/personal/personal"
   ],
@@ -26,12 +25,6 @@
       {
         "pagePath": "pages/class/class",
         "text": "分类",
-        "iconPath": "static/img/class.png",
-        "selectedIconPath": "static/img/classActive.png"
-      },
-      {
-        "pagePath": "pages/merchant/merchant",
-        "text": "商家",
         "iconPath": "static/img/class.png",
         "selectedIconPath": "static/img/classActive.png"
       },

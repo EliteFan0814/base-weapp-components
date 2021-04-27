@@ -7,6 +7,7 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     isPushing: false,
+    isSending: false,
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     swiperList: [
@@ -48,6 +49,16 @@ Page({
     setTimeout(() => {
       this.setData({
         isPushing: false
+      })
+    }, 2000)
+  },
+  handleSend() {
+    this.setData({
+      isSending: true
+    })
+    setTimeout(() => {
+      this.setData({
+        isSending: false
       })
     }, 2000)
   },
