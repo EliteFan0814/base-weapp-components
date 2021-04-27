@@ -81,7 +81,7 @@ App({
       })
     })
   },
-  // 小程序上传图片
+  // 小程序上传单张图片
   wxUpImg(number = 1) {
     const that = this
     return new Promise((resolve, reject) => {
