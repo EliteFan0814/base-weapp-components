@@ -12,7 +12,7 @@ function getWxCode() {
           resolve(res.code)
         } else {
           console.log('获取微信code失败' + res.errMsg)
-          reject
+          reject()
         }
       }
     })
