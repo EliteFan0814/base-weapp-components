@@ -4,14 +4,17 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    // 按钮名称
     btnName: {
       type: String,
       value: 'btnName'
     },
+    // 是否禁用
     disabled: {
       type: Boolean,
       value: false
     },
+    // 是否正在发送
     isPushing: {
       type: Boolean,
       value: false

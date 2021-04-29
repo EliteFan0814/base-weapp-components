@@ -48,6 +48,7 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    // 点击某个轮播图向父组件发送 tapItem 事件
     handleTap(e) {
       this.triggerEvent('tapItem', e.currentTarget.dataset.id)
     },
